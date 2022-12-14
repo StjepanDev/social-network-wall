@@ -11,12 +11,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input'; 
 
 import { LoginComponent } from './pages/login/login.component';
+import { CreateAccComponent } from './pages/create-acc/create-acc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
-    LoginComponent
+    LoginComponent,
+    CreateAccComponent
   ],
   imports: [
     BrowserModule,

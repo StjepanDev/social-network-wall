@@ -5,20 +5,29 @@
             <mat-form-field appearance="outline">
                 <mat-label>Enter Your Email</mat-label>
                 <input matInput formControlName="email"/>
+                <mat-error *ngIf="createAccountForm.controls.email" >
+                    {{createAccountForm.controls.email.hasError('required') ? 'email is required' : 'please enter a valid email'}}
+                </mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Enter Your Username</mat-label>
                 <input matInput formControlName="username"/>
+                <mat-error *ngIf="createAccountForm.controls.username">
+                    {{createAccountForm.controls.username.hasError('required') ? 'username is required' : 'username should be max 10 characters'}}
+                </mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Enter Your Password</mat-label>
                 <input matInput type="password" formControlName="password"/>
+                <mat-error *ngIf="createAccountForm.controls.password">
+                    {{createAccountForm.controls.password.hasError('required') ? 'password is required' : 'password should be atleast 6 characters'}}
+                </mat-error>
             </mat-form-field>
         </form>
 
         {{createAccountForm.value | json}}
         <div class="buttons-container">
-            <button mat-raised-button class="login-button">
+            <button mat-raised-button [disabled]="createAccountForm.invalid" (click)="create()"  class="login-button">
                 Create Account
             </button>
             <p>OR</p>

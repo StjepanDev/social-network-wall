@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 
 import {MatButtonModule} from'@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field'; 
@@ -26,7 +27,9 @@ import { CreateAccComponent } from './pages/create-acc/create-acc.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

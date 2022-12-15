@@ -5,6 +5,12 @@
       "username": "adddfad",
       "password": "adaddd",
       "id": 1
+    },
+    {
+      "email": "sdfgsdf@dsfgg",
+      "username": "john",
+      "password": "adaddd",
+      "id": 2
     }
   ],
   "posts": []

@@ -12,11 +12,13 @@ import { CreateAccComponent } from './pages/create-acc/create-acc.component';
 
 
 
-import {MatButtonModule} from'@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field'; 
-import {MatInputModule} from '@angular/material/input'; 
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatButtonModule } from'@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { MatInputModule } from '@angular/material/input'; 
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { PostsComponent } from './pages/posts/posts.component';
+import { MatIconModule } from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu'; 
 
 
 
@@ -36,6 +38,8 @@ import { PostsComponent } from './pages/posts/posts.component';
     MatFormFieldModule,
     MatInputModule,
     MatSnackBarModule,
+    MatIconModule,
+    MatMenuModule,
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule

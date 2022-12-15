@@ -35,6 +35,7 @@ login(){
         console.log('correct login')
         this.snackbar.open('logged in..','ok')
         this.userService.user = res[0];
+        localStorage.setItem('user', JSON.stringify(res[0]));
         this.router.navigate(['/posts']);
       } else {
         console.log('wrong password')

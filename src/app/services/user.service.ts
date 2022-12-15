@@ -8,6 +8,8 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
+  user:any;
+
   public createNewUser(data:any){
     return new Promise((resolve,reject)=>{
       this.http.post('http://localhost:3000/users',data).subscribe(
@@ -21,4 +23,17 @@ export class UserService {
     })
 
   }
+
+  public getUser(email:any){
+    return new Promise((resolve,reject)=>{
+      this.http.get(`http://localhost:3000/users?email=${email}`).subscribe(
+        (res)=>{
+          resolve(res)
+        },(err)=>{
+          reject(err)
+        }
+      )
+    })
+  }
+
 }

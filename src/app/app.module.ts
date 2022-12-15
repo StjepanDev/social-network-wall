@@ -15,6 +15,8 @@ import { CreateAccComponent } from './pages/create-acc/create-acc.component';
 import {MatButtonModule} from'@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field'; 
 import {MatInputModule} from '@angular/material/input'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { PostsComponent } from './pages/posts/posts.component';
 
 
 
@@ -23,7 +25,8 @@ import {MatInputModule} from '@angular/material/input';
     AppComponent,
     TopbarComponent,
     LoginComponent,
-    CreateAccComponent
+    CreateAccComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSnackBarModule,
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule

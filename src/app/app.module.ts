@@ -19,6 +19,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { PostsComponent } from './pages/posts/posts.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu'; 
+import {MatCardModule} from '@angular/material/card'; 
 
 
 
@@ -40,6 +41,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatSnackBarModule,
     MatIconModule,
     MatMenuModule,
+    MatCardModule,
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule

@@ -1,1 +1,42 @@
-<p>posts works!</p>
+<div class="container">
+    <div class="content-wrapper">
+        <mat-form-field>
+            <textarea matInput cdkTextareaAutosize [cdkAutosizeMinRows]="5" placeholder="Say Something"></textarea>
+        </mat-form-field>
+        <div class="new-post-actions-container">
+            <button mat-raised-button class="post-button">Post</button>
+        </div>
+        <mat-card class="post-card">
+            <mat-card-header>
+                <mat-card-title>
+                    Stevica
+                </mat-card-title>
+            </mat-card-header>
+            <img src="assets/sample.jpg" alt="image" mat-card-image>
+            <mat-card-content>
+                <p>
+                    Enjoying It
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button class="like-button" mat-icon-button disableRipple="true">
+                    <mat-icon>favorite_border</mat-icon>
+                </button> <span>10 liked it</span>
+            </mat-card-actions>
+            <div class="comments-container">
+                <div class="comments">
+                    <div class="title">
+                        Comments
+                    </div>
+                    <p><b>John</b>Loved it!</p>
+                </div>
+                <div class="comment-input">
+                    <mat-form-field class="comment-form-field">
+                        <input type="text" matInput placeholder="">
+                    </mat-form-field>
+                    <button class="comment-button" mat-button>Comment</button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

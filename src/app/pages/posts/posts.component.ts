@@ -23,6 +23,17 @@ export class PostsComponent implements OnInit {
       this.router.navigate(['/login'])
     }
   }
-
 }
+
+postSchema = {
+  username:'',
+  imageURL:'',
+  text:'',
+  likes:[],
+  comment:[{
+    username:'',
+    comment:''
+}]
+}
+
 }

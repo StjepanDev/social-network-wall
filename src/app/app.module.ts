@@ -20,6 +20,8 @@ import { PostsComponent } from './pages/posts/posts.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatCardModule} from '@angular/material/card'; 
+import { environment } from 'src/environments/environment';
+import { AngularFireModule} from '@angular/fire/compat'
 
 
 
@@ -44,7 +46,8 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

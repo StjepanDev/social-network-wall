@@ -21,7 +21,10 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatCardModule} from '@angular/material/card'; 
 import { environment } from 'src/environments/environment';
-import { AngularFireModule} from '@angular/fire/compat'
+import { AngularFireModule} from '@angular/fire/compat';
+import { MaterialFileInputModule } from 'ngx-material-file-input';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+
 
 
 
@@ -44,10 +47,12 @@ import { AngularFireModule} from '@angular/fire/compat'
     MatIconModule,
     MatMenuModule,
     MatCardModule,
+    MaterialFileInputModule,
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

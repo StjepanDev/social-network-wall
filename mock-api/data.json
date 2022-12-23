@@ -11,7 +11,22 @@
       "username": "john",
       "password": "adaddd",
       "id": 2
+    },
+    {
+      "email": "darko@d",
+      "username": "darko",
+      "password": "darkos",
+      "id": 3
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "username": "adddfad",
+      "text": "text",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/fbook-2ad91.appspot.com/o/images%2F1671761064900?alt=media&token=e65c85f0-6cd1-4c8a-a4a5-6b42571ec3c4",
+      "likes": [],
+      "comments": [],
+      "id": 1
+    }
+  ]
 }
